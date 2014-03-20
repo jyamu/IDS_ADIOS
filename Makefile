@@ -27,7 +27,7 @@ ids_functions.mod : ids_functions.f90
 	${FC} -g -c ids_functions.f90  $<
 
 test_core_profile : ids_types.mod ids_functions.mod
-	${FC} -g -o test_core_profile -I. ${ADIOS_INC} test_core_profile.f90 ${ADIOS_FLIB} 
+	${FC} -g -o test_core_profile -I. ${ADIOS_INC} test_core_profile.f90 ids_functions.o ${ADIOS_FLIB} 
 
 clean:
 	rm -f *.o *.mod *.fh core.* 
