@@ -1,6 +1,6 @@
 !! Test the ids_type core_profile structure, write/read to file
 program ids_test_core_profile
-    use ids_types
+    use ids_core_profiles
     use ids_functions
     implicit none
 

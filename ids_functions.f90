@@ -1,7 +1,7 @@
 module ids_functions
 
   !use ids_types, only : ids_core_profile_type
-  use ids_types
+  use ids_core_profiles
 
   contains
 
